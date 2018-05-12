@@ -153,7 +153,7 @@ def run_(exp_config, properties_file_path,repo_path):
     command = repr(os.path.normpath(os.path.join(exp_config.JDKDir, 'bin', 'java'))).replace('\'',
 
          '"') + ' -jar ' + \
-              exp_config.get_jaid_path() + ' ' + constants.JAID_ARG_PROPERTY + ' ' + properties_file_path + ' ' + '1'
+              exp_config.get_jaid_path() + ' ' + constants.JAID_ARG_PROPERTY + ' ' + properties_file_path + ' ' + '2'
     print('EXE COMMAND: ' + command)
     os.system(command)
     command = 'cp -r '+ properties_file_path.split('/local_jaid.properties')[0]+'/jaid_output '+ properties_file_path.split('/local_jaid.properties')[0]+'/jaid_output'+'republic10r11'
