@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fixja.iml" filepath="$PROJECT_DIR$/.idea/modules/fixja.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fixja_main.iml" filepath="$PROJECT_DIR$/.idea/modules/fixja_main.iml" group="fixja" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fixja_test.iml" filepath="$PROJECT_DIR$/.idea/modules/fixja_test.iml" group="fixja" />
+      <module fileurl="file://$PROJECT_DIR$/jaid.iml" filepath="$PROJECT_DIR$/jaid.iml" />
+    </modules>
+  </component>
+</project>

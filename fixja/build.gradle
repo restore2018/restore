@@ -1,0 +1,82 @@
+apply plugin: 'java'
+
+repositories {
+    jcenter()
+}
+
+sourceSets {
+    main {
+        java {
+            srcDirs = ["src"]
+        }
+    }
+}
+
+configurations {
+    provided
+    compile.extendsFrom provided
+}
+
+task fatJar(type: Jar) {
+    manifest {
+        attributes 'Main-Class': 'hk.polyu.comp.jaid.fixer.Application'
+        attributes 'Agent-Class': 'hk.polyu.comp.jaid.assertagent.AgentEntry'
+        attributes 'Premain-Class': 'hk.polyu.comp.jaid.assertagent.AgentEntry'
+        attributes 'Can-Redefine-Classes': 'true'
+        attributes 'Can-Retransform-Classes': 'true'
+    }
+    baseName = project.name + '-all'
+    from {
+        configurations.compile.collect {
+            it.isDirectory() ? it : zipTree(it)
+        }
+    } {
+        exclude "META-INF/*.SF"
+        exclude "META-INF/*.DSA"
+        exclude "META-INF/*.RSA"
+    }
+    with jar
+}
+task restoreJar(type: Jar) {
+    manifest {
+        attributes 'Main-Class': 'hk.polyu.comp.restore.Application'
+        attributes 'Agent-Class': 'hk.polyu.comp.jaid.assertagent.AgentEntry'
+        attributes 'Premain-Class': 'hk.polyu.comp.jaid.assertagent.AgentEntry'
+        attributes 'Can-Redefine-Classes': 'true'
+        attributes 'Can-Retransform-Classes': 'true'
+    }
+    baseName = 'restore'
+    from {
+        configurations.compile.collect {
+            it.isDirectory() ? it : zipTree(it)
+        }
+    } {
+        exclude "META-INF/*.SF"
+        exclude "META-INF/*.DSA"
+        exclude "META-INF/*.RSA"
+    }
+    with jar
+}
+
+task agentJar(type: Jar) {
+    manifest {
+        attributes 'Agent-Class': 'hk.polyu.comp.jaid.assertagent.AgentEntry'
+        attributes 'Premain-Class': 'hk.polyu.comp.jaid.assertagent.AgentEntry'
+        attributes 'Can-Redefine-Classes': 'true'
+        attributes 'Can-Retransform-Classes': 'true'
+    }
+    baseName = project.name + '-agent'
+
+    with jar
+}
+
+
+dependencies {
+    compile fileTree(dir: 'lib', include: '*.jar')
+    compile fileTree(dir: 'lib', exclude: 'assertagent-all.jar')
+    //provided files('C:\\Program Files\\Java\\jdk1.8.0_111\\jre\\lib\\plugin.jar')
+//    provided files('/Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home/jre/lib/plugin.jar')
+
+
+}
+

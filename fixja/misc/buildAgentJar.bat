@@ -1,0 +1,1 @@
+jar cvfm ../out/production/fixja/ExecutedMethodsLoggingAgent.jar ../src/hk/polyu/comp/fixja/monitor/instrument/ExecutedMethodsLoggingAgent.mf ../out/production/fixja/hk/polyu/comp/fixja/monitor/instrument/ExecutedMethodsLoggingAgent.class

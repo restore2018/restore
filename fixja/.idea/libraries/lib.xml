@@ -1,0 +1,33 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/commons-cli-1.3.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-exec-1.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/hamcrest-core-1.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javassist.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/junit-4.12.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/logback-classic-1.1.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/logback-core-1.1.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/org.eclipse.core.contenttype_3.5.0.v20150421-2214.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/org.eclipse.core.jobs_3.7.0.v20150330-2103.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/org.eclipse.core.resources_3.10.1.v20150725-1910.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/org.eclipse.core.runtime_3.11.1.v20150903-1804.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/org.eclipse.equinox.common_3.8.0.v20160509-1230.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/org.eclipse.equinox.preferences_3.5.300.v20150408-1437.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/org.eclipse.jdt.core_3.12.1.v20160829-0950.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/org.eclipse.osgi_3.10.102.v20160118-1700.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/org.eclipse.text_3.6.0.v20160503-1849.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/slf4j-api-1.7.21.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/tools.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/lib/commons-cli-1.3.1-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-exec-1.3-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/lib/org.eclipse.jdt.core.source_3.12.1.v20160829-0950.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/tools.jar!/" />
+      <root url="file://$USER_HOME$/Downloads/jboss-javassist-javassist-40d3223/src/main" />
+    </SOURCES>
+  </library>
+</component>
